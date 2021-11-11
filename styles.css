@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kdam+Thmor&family=Press+Start+2P&family=Roboto:wght@100&display=swap');
+
+
+.divide {
+	padding: 0;
+	margin: 0;
+	margin-bottom: -1px;
+	background: #1e5799;
+	background: -moz-linear-gradient(left,  #33c2e6 0%, #33c2e6 50%, #33c2e6 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#33c2e6), color-stop(50%,#33c2e6), color-stop(100%,#33c2e6));
+	background: -webkit-linear-gradient(left,  #1e5799 0%,#33c2e6 50%,#33c2e6 100%);
+	background: -o-linear-gradient(left,  #33c2e6 0%,#33c2e6 50%,#33c2e6 100%);
+	background: -ms-linear-gradient(left,  #33c2e6 0%,#33c2e6 50%,#33c2e6 100%);
+	background: linear-gradient(to right,  #33c2e6 0%,#33c2e6 50%,#33c2e6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#e0ff00',GradientType=1 );
+
+	height: 3px;
+	border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+html,
+body {
+  margin  : 0;
+  height  : 100%;
+  overflow: hidden
+}
+
+p.title {
+  font-size     : 80px;
+  text-align    : center;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 2px;
+  text-shadow   : 0px 0px 10px #00ccff;
+}
+
+p.sub-title {
+  font-size     : 25px;
+  text-align    : center;
+  position      : relative;
+  top           : 40px;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 2px;
+  text-shadow   : 0px 0px 8px #00ccff;
+}
+
+span[data-color="primary"] {
+  color: #00ccff;
+}
+
+span[data-color="secondary"] {
+  color: #ffffff;
+}
+
+#center {
+  position : absolute;
+  top      : 50%;
+  left     : 50%;
+  transform: translate(-50%, -50%);
+}
+
+#particles-js {
+  width              : 100%;
+  height             : 100%;
+  background-color   : #222121;
+  background-image   : url('');
+  background-size    : cover;
+  background-position: 50% 50%;
+  background-repeat  : no-repeat;
+}
