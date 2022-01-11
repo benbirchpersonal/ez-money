@@ -7,10 +7,3 @@ body {
 canvas {
     display:block;
 }
-
-#cock {
-    display:flex;
-    top:50%;
-    left:50%;
-    
-}
