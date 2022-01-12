@@ -5,6 +5,24 @@ canvas.height = window.innerHeight;
 var particles = [];
 var num_particles = 1000;//Change that to your liking
 
+var mysql = require('mysql');
+
+var con = mysql.createConnection({
+  host: "localhost",
+  user: "yourusername",
+  password: "yourpassword"
+});
+
+con.connect(function(err) {
+  if (err) throw err;
+  console.log("Connected!");
+  con.query("CREATE DATABASE mydb", function (err, result) {
+    if (err) throw err;
+    console.log("Database created");
+  });
+});
+
+
 //Helper function to get a random color - but not too dark
 function GetRandomColor() {
     var r = 0, g = 0, b = 0;
