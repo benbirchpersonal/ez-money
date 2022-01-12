@@ -8,12 +8,6 @@ canvas {
     display:block;
 }
 
-#genLink {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    translate(50%, 50%);
-    text-align: center;
-    text-color: white;
-    background-color: blue;
+#mainWindow {
+    background-color: black;
 }
