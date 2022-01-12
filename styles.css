@@ -8,6 +8,48 @@ canvas {
     display:block;
 }
 
-#mainWindow {
+.mainWindow {
     background-color: black;
 }
+
+.title {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 0;
+}
+
+.title-text {
+    color: white;
+    display: inline-block;
+    font-family: 'Chakra Petch';
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+.title-dot {
+    display: inline-block;
+    font-family: 'Chakra Petch';
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out; infinite;
+    background-size: 400% 100%;
+}
+
+
