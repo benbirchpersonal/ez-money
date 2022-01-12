@@ -7,3 +7,12 @@ body {
 canvas {
     display:block;
 }
+
+#genLink {
+    top: 50%;
+    left: 50%;
+    translate(50%, 50%);
+    text-align: center;
+    text-color: white;
+    background-color: blue;
+}
