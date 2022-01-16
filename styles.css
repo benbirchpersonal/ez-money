@@ -1,8 +1,13 @@
 body 
 {
+    width: 100%;
+    height: auto;
     background: black;
-    height: 100%;
     overflow: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 .title-div 
@@ -19,23 +24,28 @@ body
 
 .title-text 
 {
+    position:relative;
+    z-index: 10;
     color: white;
     font-family: 'Source Code Pro';
     display: inline-block;
     padding: 0;
-    margin-left: -1%;
-    margin-right: -1%;
+    margin-left: -2%;
+    margin-right: -2%;
 }
 
 
 .rainbow
 {
+    position:relative;
+    z-index: 9;
     background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    border: 7px solid black;
     animation: rainbow_animation 6s ease-in-out infinite;
-    background-size: 1000% 100%;
+    background-size: 900% 99%;
 }
 
 @keyframes rainbow_animation 
@@ -45,11 +55,12 @@ body
 }
 
 .btn {
-     transition: all 0.8s;
+    transition: all 0.8s;
     font-family: 'Source Code Pro';
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
     background: transparent;
     border: 2px solid white;
     border-radius: 2px;
@@ -74,6 +85,7 @@ body
 .urlDesignPage {
     opacity: 0;
     background: black;
+
     width: 100%;
     height: 100%;
     position: absolute;
@@ -82,18 +94,40 @@ body
  
 }
 
+
 .urlDesignerBox {
     text-align: center;
-    width: 50%;
+    width: 20%;
     height: 50%;
     top: 50%;
     left: 50%;
     position: absolute;
+    border-radius: 10px;
     transform: translate(-50%, -50%);
-    border: 2px solid white;
+    border: 3px solid white;
     background: transparent;
 }
 
+.optionsText {
+    font-family: 'Source Code Pro';
+    textBox
+    margin-bottom:2%;
+}
+
+.white {
+    color:white;
+}
+
+.textBox {
+    background-color: transparent;
+    color:white;
+    font-family: 'Source Code Pro';
+    border-radius: 5px;
+    border: 3px solid white;
+    left:30%;
+}
+
 #shortener-text {
-    width: 50%;
+    position: relative;
+    top:1%;
 }
