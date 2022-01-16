@@ -2,11 +2,11 @@
 <html>
     <head>
         <title>quay.group</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400&display=swap" rel="stylesheet">
         <script src="js.js"></script>
-        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link href="styles.css" rel="stylesheet" />
     </head>
@@ -24,6 +24,21 @@
                 <div class="urlDesignPage">
                     <div class="urlDesignerBox">
                         <h1 class="title-text" id="shortener-text">Shortener</h1>
+
+                        <h2 class= "optionsText white" id="originalLink"> original link </h2>
+                        <input type="text" class="textBox" id="originalLinkBox"/>
+
+                        <h2 class= "optionsText white" id="customLink"> custom link </h2>
+                        <input type="text" class="textBox" style="left:30%;width:35%; padding:0px" id="customLinkBox"/>
+
+                        <input type="checkbox" id="cst" name="cst" style="width:5%;padding:0px;" checked>
+                        
+                        <div btnn>
+                            <button class="btn" id="no" >generate</button>
+                         </div>
+                        <h2 class= "optionsText white" id="shortenedLink"> shortened link </h2>
+                        <h3 class= "optionsText rainbow" id="shortenedLink"> quay.group/test </h2>
+
                     </div>
                 </div>
             
