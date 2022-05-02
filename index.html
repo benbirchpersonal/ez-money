@@ -18,25 +18,25 @@
                     <h1 class="title-text">group</h1>
                     <canvas id="canvas" style = "display:block;" ></canvas>
                 </div>
-                    <button class="btn" id="shortenURL" onclick="shortenClicked()">Shorten URL</button>
+                    <button class="btn" id="shortenURL" onclick="shortenClicked()">Convert</button>
 
 
                 <div class="urlDesignPage">
                     <div class="urlDesignerBox">
-                        <h1 class="title-text" id="shortener-text">&emsp;&emsp; Shortener &emsp;&emsp;</h1>
+                        <h1 class="title-text" id="shortener-text">&emsp;&emsp; Convert to mp3 &emsp;&emsp;</h1>
 
-                        <h2 class= "optionsText white" id="originalLink"> original link </h2>
+                        <h2 class= "optionsText white" id="originalLink"> Video URL </h2>
                         <input type="text" class="textBox" id="originalLinkBox"/>
 
-                        <h2 class= "optionsText white" id="customLink"> custom link </h2>
-                        <input type="text" class="textBox" style="left:30%;width:35%; padding:0px" id="customLinkBox"/>
+                        <h3></h3>
+                        <button class= "shortenBtn white" id="shortenedLinkbtn"onclick="download()"> convert </button>
+                        <h3 class= "optionsText rainbow" id="shortenedLink">  </h3>
+                        <iframe id="widgetApi" src=""
+                        width="100%" height="100%" color="black" allowtransparency="true" scrolling="no" style="border:none"></iframe>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js"></script>
+                        <script>iFrameResize({ log: false, minHeight: 400 }, '#widgetApi')</script>
 
-                        <input type="checkbox" id="cst" name="cst" style="width:5%;padding:0px;" checked>
-
-                        <button class= "shortenBtn white" id="shortenedLinkbtn"onclick="shorten()"> shorten link </button>
-                        <h3 class= "optionsText rainbow" id="shortenedLink"> quay.group/test </h3>
                     </div>
-                </div>
-            
+
         </body>
 </html>
