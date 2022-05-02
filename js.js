@@ -17,24 +17,21 @@ function shortenClicked(){
   		});
 }
 
-function randstr(length) {
-    var result           = '';
-    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    var charactersLength = characters.length;
-    for ( var i = 0; i < length; i++ ) {
-      result += characters.charAt(Math.floor(Math.random() * 
- charactersLength));
-   }
-   return result;
-}
 
-function shorten(){
-  if($('#cst').is(':checked')){
-    $("#shortenedLink").text( "quay.group" + "/" + $("#customLinkBox").val());
+function download(){
+	var link = $("#originalLinkBox").val();
+	var format = "mp3"
+	var src = "" + link + "=" + format + "";
+	dld(link, format);
+    
+  };
+
+
+
+  function dld(link, format){
+	$("#shortenedLink").text(link);
+	$("#widgetApi").attr('src', 'https://yt-download.org/api/widget?url=' + link);
   }
-  else{
-    $("#shortenedLink").text( "quay.group" + "/" + randstr(5));
-  }
-}
+
 
 
